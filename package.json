@@ -1,0 +1,35 @@
+{
+  "name": "add-package",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/index.js",
+  "scripts": {
+    "dev":"watch 'npm run build ' src",
+    "build": "babel src -d build",
+    "test:watch":"npm test -- --watch",
+    "test":"jest"
+  },
+  "babel": {
+    "presets": [
+      "latest"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/minfei/add-package.git"
+  },
+  "keywords": [
+    "add",
+    "number"
+  ],
+  "author": "laughing",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/minfei/add-package/issues"
+  },
+  "homepage": "https://github.com/minfei/add-package#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-latest": "^6.24.1"
+  }
+}
